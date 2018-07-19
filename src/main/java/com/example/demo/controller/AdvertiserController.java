@@ -39,9 +39,9 @@ public class AdvertiserController {
     return mapper.update(advertiser);
   }
 
-  // Delete Movie
+  // Delete Advertiser
   @DeleteMapping("/{id}")
-  public int deleteMovie(@PathVariable(value = "id") int id) {
+  public int deleteAdvertiser(@PathVariable(value = "id") int id) {
     return mapper.deleteById(id);
   }
 
