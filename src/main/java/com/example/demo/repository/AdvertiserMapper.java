@@ -23,7 +23,7 @@ public interface AdvertiserMapper {
   @Insert("INSERT INTO advertisers(advertiserName, advertiserContactName, creditLimit) VALUES (#{advertiserName}, #{advertiserContactName}, #{creditLimit})")
   public int insert(Advertiser advertiser);
 
-  @Update("Update advertisers set advertiserName=#{advertiserName}, advertiserContactName=#{advertiserContactName}, creditLimit=#{creditLimit} where id=#{id}")
+  @Update("Update advertisers set advertiserName=#{advertiserName}, advertiserContactName=#{advertiserContactName}, creditLimit=#{creditLimit} where advertiserName=#{advertiserName}")
   public int update(Advertiser advertiser);
 
 }
